@@ -1,0 +1,33 @@
+//Global styles
+.roboto-light {
+  font-family: 'Roboto Light', sans-serif;
+}
+
+.roboto {
+  font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
+}
+
+body {
+  font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
+  font-weight: normal;
+}
+
+.bold {
+  font-family: "Roboto Bold", "Franklin Gothic Medium", Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+.home {
+  margin-left: -15px !important;
+}
+
+.mat-list-base .mat-list-item .mat-list-item-content, .mat-list-base .mat-list-option .mat-list-item-content {
+  margin-left: -5px !important;
+  height: 30px !important;
+}
+
+
+.mat-grid-tile .mat-figure {
+  text-align: left;
+  justify-content: left!important;
+}

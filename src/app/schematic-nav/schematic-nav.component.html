@@ -1,0 +1,204 @@
+<!--Please note: this side navigation is not out of the box, it has the expansion panel inside. -->
+<!--For basic side nav implementation use a generated mat component.-->
+<!--For the expanded list to be clickable surround it with <mat-nav-list>-->
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+               [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+               [mode]="(isHandset$ | async) ? 'over' : 'side'"
+               [opened]="(isHandset$ | async) === false">
+    <!--    Toolbar Top-->
+    <mat-toolbar>
+      <div id="style-guide-header1">
+        <img src="../assets/arrowhead-logo.svg" alt="NPS logo"><span
+        class="NPS-title"> National Park Service </span>
+      </div>
+    </mat-toolbar>
+
+    <!--    Side Navigation Start-->
+    <mat-expansion-panel>
+
+      <!--    Forms-->
+
+      <mat-expansion-panel-header>
+        <a mat-list-item routerLink="/forms">
+          <fa-icon [icon]="faFileAlt"></fa-icon>
+          <span>
+        <span class="panel-title">Forms</span>
+        </span>
+        </a>
+      </mat-expansion-panel-header>
+
+      <mat-list class="sub-list">
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment"> Auto Complete</span>
+        </mat-list-item>
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment">Checkbox</span>
+        </mat-list-item>
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment">Datepicker</span>
+        </mat-list-item>
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment">Form Field</span>
+        </mat-list-item>
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment">Radio Button</span>
+        </mat-list-item>
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment"> Select</span>
+        </mat-list-item>
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment">Slider</span>
+        </mat-list-item>
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment">Side Toggle</span>
+        </mat-list-item>
+      </mat-list>
+    </mat-expansion-panel>
+    <mat-divider></mat-divider>
+
+    <!--    Navigation-->
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <a mat-list-item routerLink="/navigation">
+          <i class="fas fa-location-arrow"></i>
+          <span class="panel-title">Navigation</span>
+        </a>
+      </mat-expansion-panel-header>
+      <mat-list class="sub-list">
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment">Menu</span>
+        </mat-list-item>
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment"> Sidenav</span>
+        </mat-list-item>
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment">Toolbar</span>
+        </mat-list-item>
+      </mat-list>
+    </mat-expansion-panel>
+    <mat-divider></mat-divider>
+
+    <!--    Layout-->
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <a mat-list-item routerLink="/layout">
+          <i class="fas fa-line-columns"></i>
+          <span class="panel-title">Layout</span>
+        </a>
+      </mat-expansion-panel-header>
+      <mat-list class="sub-list">
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment"> Card</span>
+        </mat-list-item>
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment"> Divider</span>
+        </mat-list-item>
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment"> Expansion Panel</span>
+        </mat-list-item>
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment"> Stepper</span>
+        </mat-list-item>
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment"> Tabs</span>
+        </mat-list-item>
+      </mat-list>
+    </mat-expansion-panel>
+    <mat-divider></mat-divider>
+
+    <!--    Buttons & Indicators-->
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <a mat-list-item routerLink="/button-interactions">
+          <fa-icon [icon]="faCheck"></fa-icon>
+          <span class="panel-title">Buttons & Indicators</span>
+        </a>
+      </mat-expansion-panel-header>
+      <mat-list class="sub-list">
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment">Button</span>
+        </mat-list-item>
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment">Chips</span>
+        </mat-list-item>
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment"> Icon</span>
+        </mat-list-item>
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment">Progress Spinner</span>
+        </mat-list-item>
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment">Progress Bar</span>
+        </mat-list-item>
+      </mat-list>
+    </mat-expansion-panel>
+    <mat-divider></mat-divider>
+
+    <!--    Popups & Modals-->
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <a mat-list-item routerLink="/popups">
+          <fa-icon [icon]="faWindowRestore"></fa-icon>
+          <span class="panel-title">Popups & Modals</span>
+        </a>
+      </mat-expansion-panel-header>
+      <mat-list class="sub-list">
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment"> Dialog</span>
+        </mat-list-item>
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment"> Snackbar (toaster)</span>
+        </mat-list-item>
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment">Tooltip</span>
+        </mat-list-item>
+      </mat-list>
+    </mat-expansion-panel>
+    <mat-divider></mat-divider>
+
+    <!--    Data Tables-->
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <a mat-list-item routerLink="/datatables">
+          <fa-icon [icon]="faTable"></fa-icon>
+          <span class="panel-title">Data Tables</span>
+        </a>
+      </mat-expansion-panel-header>
+      <mat-list class="sub-list">
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment">Paginator</span>
+        </mat-list-item>
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment"> Sort Header</span>
+        </mat-list-item>
+        <mat-list-item class="list-margin">
+          <span class="list-text-expansion-alignment">Table</span>
+        </mat-list-item>
+      </mat-list>
+    </mat-expansion-panel>
+    <mat-divider></mat-divider>
+  </mat-sidenav>
+  <!--    Side Navigation Enc-->
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">
+          <div id="style-guide-header">
+            <img src="../assets/arrowhead-logo.svg" alt="NPS logo"> <span class="bold NISC">NISC</span><span
+            class="NPS-title"> Application Style Guide</span>
+          </div>
+        </mat-icon>
+      </button>
+    </mat-toolbar>
+
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

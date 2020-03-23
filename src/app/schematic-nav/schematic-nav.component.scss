@@ -1,0 +1,150 @@
+.forms-panel {
+  padding-left: 28px;
+}
+
+.NPS-title {
+  font-size: 11px;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 7px;
+  margin-top: 5px;
+}
+
+.NISC {
+  font-size: 11px;
+  padding-left: 10px;
+  margin-top: 5px;
+  font-family: 'Roboto Bold', sans-serif;
+  font-weight: bold;
+}
+
+.panel-title {
+  padding-left: 10px;
+  font-size: 12px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgba(0,0,0,.87);
+
+}
+a {
+  text-decoration: none;
+}
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+#style-guide-header {
+  display: flex;
+  margin-top: -10px;
+  margin-left: -5px;
+}
+
+#style-guide-header1 {
+  display: flex;
+}
+
+//overwrites out of box material theme classes on sidebar
+
+  .list-text-expansion-alignment {
+    padding-left: 24px;
+  }
+
+mat-sidenav, mat-expansion-panel-header, .mat-expansion-panel {
+  background-color: #ccc;
+}
+
+mat-expansion-panel-header {
+  padding: 0 19px;
+}
+
+.mat-expansion-panel {
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.mat-content {
+  padding-top: 5px;
+}
+
+.mat-drawer-backdrop.mat-drawer-shown {
+  background-color: white;
+}
+
+.mat-drawer-inner-container {
+  min-width: 500px;
+}
+
+.mat-drawer-side {
+  border: none;
+}
+
+.mat-list-base .mat-list-item, .mat-list-base .mat-list-option {
+  display: block;
+  height: 50px;
+  -webkit-tap-highlight-color: transparent;
+  padding: 0;
+  margin-left: -20px;
+  width: 190px !important;
+}
+
+.list-margin {
+  margin-top: -20px;
+  margin-left: 200px;
+}
+
+.mat-form-field {
+  background-color: red;
+  width: 500px;
+}
+
+.mat-list-base {
+  padding-top: 0px;
+
+}
+
+
+.mat-list-text {
+  margin-left: 50px;
+  padding-left: 40px !important;
+}
+
+.mat-list-base .mat-list-item .mat-list-item-content {
+  width: 200px;
+  padding: 0;
+}
+
+.mat-list-base .mat-list-item {
+  font-size: 12px;
+  padding: 0;
+}
+
+.mat-toolbar {
+&.mat-primary {
+   position: sticky;
+   top: 0;
+   z-index: 1;
+ }
+
+background-color: black;
+color: white;
+}
+
+//Mat Side bar FA icons are 1px off
+                             mat-expansion-panel-header .fas {
+                               padding-top: 1px;
+                             }
+
+.mat-list-item-ripple {
+  height: 30px;
+}
+.panel-title:hover{
+  color:white;
+}
+fa-icon, .fas {
+  color:black;
+}
+
