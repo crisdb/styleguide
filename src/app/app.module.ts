@@ -30,6 +30,22 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import {MatRadioModule} from '@angular/material/radio';
+import { ButtonsComponent } from './buttons-interactions/buttons/buttons.component';
+import { ChipsComponent } from './buttons-interactions/chips/chips.component';
+import { ProgressSpinnerComponent } from './buttons-interactions/progress-spinner/progress-spinner.component';
+import { PaginatorComponent } from './datatables/paginator/paginator.component';
+import { SortHeaderComponent } from './datatables/sort-header/sort-header.component';
+import { TableComponent } from './datatables/table/table.component';
+import { CardComponent } from './layout/card/card.component';
+import { DividerComponent } from './layout/divider/divider.component';
+import { ExpansionPanelComponent } from './layout/expansion-panel/expansion-panel.component';
+import { StepperComponent } from './layout/stepper/stepper.component';
+import { TabsComponent } from './layout/tabs/tabs.component';
+import { MenuComponent } from './navigation/menu/menu.component';
+import { SidenavComponent } from './navigation/sidenav/sidenav.component';
+import { ToolbarComponent } from './navigation/toolbar/toolbar.component';
+import { DialogComponent } from './popups/dialog/dialog.component';
+import { SnackbarComponent } from './popups/snackbar/snackbar.component';
 
 
 @NgModule({
@@ -50,7 +66,23 @@ import {MatRadioModule} from '@angular/material/radio';
     LayoutComponent,
     NavigationComponent,
     PopupsComponent,
-    SchematicNavComponent
+    SchematicNavComponent,
+    ButtonsComponent,
+    ChipsComponent,
+    ProgressSpinnerComponent,
+    PaginatorComponent,
+    SortHeaderComponent,
+    TableComponent,
+    CardComponent,
+    DividerComponent,
+    ExpansionPanelComponent,
+    StepperComponent,
+    TabsComponent,
+    MenuComponent,
+    SidenavComponent,
+    ToolbarComponent,
+    DialogComponent,
+    SnackbarComponent
   ],
   imports: [
     BrowserModule,
