@@ -1,0 +1,42 @@
+.mat-grid-list{
+  margin: 20px;
+}
+mat-grid-tile .mat-figure {
+  justify-content: flex-start!important ;
+  align-items: flex-start!important;
+  height: 300px!important;
+
+}
+
+mat-grid-tile {
+  border-radius: 4px !important;
+}
+.container{
+  margin: 15px;
+}
+.spacing {
+  padding-top:50px;
+}
+
+
+//FlexGrid
+//  .parent {height: 100px;   margin: 15px;}
+
+
+mat-card {
+  margin: 20px;
+}
+
+.flex-card-height {
+  height: 175px;
+
+}
+.example-radio-group {
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0;
+}
+
+.example-radio-button {
+  margin: 5px;
+}

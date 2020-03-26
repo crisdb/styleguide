@@ -2,6 +2,7 @@
   <h1>Form Elements</h1>
   <h4>Using Angular Material to style Form Elements
   </h4>
+
   <div class="flex-container" fxLayout="column">
     <mat-card class="child-1">
 
@@ -16,95 +17,56 @@
         <mat-radio-button class="example-radio-button">TODO
         </mat-radio-button>
       </mat-radio-group>
-
-      <mat-grid-list cols="2" rowHeight="175px" gutterSize="55px">
-        <mat-grid-tile class="grid-tile"
-                       *ngFor="let tile of tiles"
-                       [rowspan]="tile.rows"
-                       [style.background]="tile.color">
-          {{tile.text}}
-          <app-autocomplete *ngIf="tile.componentName === 'autocomplete'" class="spacing"></app-autocomplete>
-          <app-checkbox *ngIf="tile.componentName === 'checkbox'" class="spacing"></app-checkbox>
-
-          <app-datepicker *ngIf="tile.componentName === 'datepicker'" class="spacing"></app-datepicker>
-          <app-formfield *ngIf="tile.componentName === 'formfield'" class="spacing"></app-formfield>
-
-          <app-radiobutton *ngIf="tile.componentName ==='radiobutton'" class="spacing"></app-radiobutton>
-          <app-select *ngIf="tile.componentName === 'select'" class="spacing"></app-select>
-
-          <app-slider *ngIf="tile.componentName ==='slider'" class="spacing"></app-slider>
-          <app-sidetoggle *ngIf="tile.componentName === 'slidetoggle'" class="spacing"></app-sidetoggle>
-
-          <mat-grid-tile-header>
-            <h3> {{tile.headerText}} </h3>
-          </mat-grid-tile-header>
-        </mat-grid-tile>
-      </mat-grid-list>
     </mat-card>
   </div>
-</div>
-<br><br>
 
 
-<!--<div class="parent" fxLayout="row"  fxLayout.sm="column">-->
-<!--  <mat-card  *ngFor="let tile of tiles"-->
-<!--             [style.background]="tile.color">-->
-<!--    {{tile.text}}-->
-<!--        <div fxFlex="100%" class="left"><app-autocomplete *ngIf="tile.componentName === 'autocomplete'" class="spacing"  fxLayoutGap="20px"></app-autocomplete>       {{tile.text}}</div>-->
-<!--  </mat-card>-->
-<!--  <mat-card  *ngFor="let tile of tiles"-->
-<!--             [style.background]="tile.color">-->
-<!--    {{tile.text}}-->
-<!--    <div fxFlex="100%" class="left">          <app-checkbox *ngIf="tile.componentName === 'checkbox'" ></app-checkbox> {{tile.text}}</div>-->
-<!--  </mat-card>-->
-<!--</div>-->
+  <div class="container">
+    <mat-card>
+      <h1>Angular Flex Grid</h1>
+      <h4>Responsive Grid System
+      </h4>
+
+      <div class="parent flex-card-height" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+
+        <mat-card fxFlex="50%">
+          <div class="left" fxFlex="50%"
+               *ngFor="let tile of tiles">
+            {{tile.text}}
+            <app-autocomplete *ngIf="tile.componentName === 'autocomplete'" class="spacing"></app-autocomplete>
+          </div>
+        </mat-card>
+
+        <mat-card fxFlex="50%">
+          <div class="right" fxFlex="50%"
+               *ngFor="let tile of tiles">
+            {{tile.text}}
+            <app-checkbox *ngIf="tile.componentName === 'checkbox'" class="spacing"></app-checkbox>
+          </div>
+        </mat-card>
 
 
-<div class="container">
-  <mat-card>
-    <h1>Angular Flex Grid</h1>
-    <h4>Responsive Grid System
-    </h4>
-
-    <div class="" fxLayout="row" fxLayout.sm="column" class="parent flex-card-height">
-
-      <mat-card fxFlex="50%">
-        <div class="left"
-             *ngFor="let tile of tiles">
-          {{tile.text}}
-          <app-autocomplete *ngIf="tile.componentName === 'autocomplete'" class="spacing"></app-autocomplete>
+        <div class="parent flex-card-height" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+          <mat-card fxFlex="50%">
+            <div class="left" fxFlex="50%"
+                 *ngFor="let tile of tiles">
+              {{tile.text}}
+              <app-datepicker *ngIf="tile.componentName === 'datepicker'" class="spacing"></app-datepicker>
+            </div>
+          </mat-card>
+          <mat-card fxFlex="50%">
+            <div class="right" fxFlex="50%"
+                 *ngFor="let tile of tiles">
+              {{tile.text}}
+              <app-formfield *ngIf="tile.componentName === 'formfield'" class="spacing"></app-formfield>
+            </div>
+          </mat-card>
         </div>
-      </mat-card>
-
-      <mat-card fxFlex="50%">
-        <div class="right"
-             *ngFor="let tile of tiles">
-          {{tile.text}}
-          <app-checkbox *ngIf="tile.componentName === 'checkbox'" class="spacing"></app-checkbox>
-        </div>
-      </mat-card>
-
-    </div>
 
 
-    <div class="" fxLayout="row" fxLayout.sm="column" class="parent flex-card-height">
+      </div>
 
-      <mat-card fxFlex="50%">
-        <div class="left"
-             *ngFor="let tile of tiles">
-          {{tile.text}}
-          <app-datepicker *ngIf="tile.componentName === 'datepicker'" class="spacing"></app-datepicker>
-        </div>
-      </mat-card>
 
-      <mat-card fxFlex="50%">
-        <div class="right"
-             *ngFor="let tile of tiles">
-          {{tile.text}}
-          <app-formfield *ngIf="tile.componentName === 'formfield'" class="spacing"></app-formfield>
-        </div>
-      </mat-card>
-    </div>
-  </mat-card>
-
+    </mat-card>
+  </div>
 </div>
