@@ -5,15 +5,13 @@
     <h4>Using Angular Material to style Form Elements
     </h4>
   </div>
-  <div class="flex-container" fxLayout="row">
+  <div class="flex-container" fxLayout="column">
     <mat-card class="child-1 label">
 
       <label id="example-radio-group-label" class="label">Choose a theme: &nbsp;&nbsp; </label>
       <mat-radio-group aria-label="Select an option">
-
         <mat-radio-button value="1">Neutral</mat-radio-button>
         <mat-radio-button value="2">todo</mat-radio-button>
-
       </mat-radio-group>
     </mat-card>
   </div>
@@ -26,8 +24,8 @@
     </h4>
   </div>
 
-  <div class="parent flex-card-height" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutGap="32px"   >
-    <mat-card fxFlex="50%" >
+  <div class="parent flex-card-height" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutGap="32px">
+    <mat-card fxFlex="50%">
       <div class="mat-card-title heading"></div>
       <div class="left"
            *ngFor="let tile of tiles">
@@ -35,7 +33,6 @@
         <app-autocomplete *ngIf="tile.componentName === 'autocomplete'" class="spacing"></app-autocomplete>
       </div>
     </mat-card>
-
 
     <mat-card fxFlex="50%">
       <div class="mat-card-title heading"></div>
@@ -48,7 +45,9 @@
   </div>
 
 
-  <div class="parent flex-card-height" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutGap="32px" >
+
+
+  <div class="parent flex-card-height" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutGap="32px">
     <mat-card fxFlex="50%">
       <div class="mat-card-title heading"></div>
       <div class="left"
@@ -57,6 +56,7 @@
         <app-datepicker *ngIf="tile.componentName === 'datepicker'" class="spacing"></app-datepicker>
       </div>
     </mat-card>
+
 
     <mat-card fxFlex="50%">
       <div class="mat-card-title heading"></div>
@@ -78,7 +78,8 @@
         <app-radiobutton *ngIf="tile.componentName === 'radiobutton'" class="spacing"></app-radiobutton>
       </div>
     </mat-card>
-    <mat-card fxFlex="50%">
+
+  <mat-card fxFlex="50%">
       <div class="mat-card-title heading"></div>
       <div class="right"
            *ngFor="let tile of tiles">
@@ -89,7 +90,7 @@
   </div>
 
   <div class="parent flex-card-height" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutGap="32px">
-    <mat-card fxFlex="50%"  >
+    <mat-card fxFlex="50%">
       <div class="mat-card-title heading"></div>
       <div class="left"
            *ngFor="let tile of tiles">
@@ -97,7 +98,8 @@
         <app-slider *ngIf="tile.componentName === 'slider'" class="spacing"></app-slider>
       </div>
     </mat-card>
-    <mat-card fxFlex="50%">
+
+  <mat-card fxFlex="50%">
       <div class="mat-card-title heading"></div>
       <div class="right"
            *ngFor="let tile of tiles">
@@ -106,7 +108,6 @@
       </div>
     </mat-card>
   </div>
-
 </div>
 
 
