@@ -8,7 +8,7 @@
   <div class="flex-container" fxLayout="row">
     <mat-card class="child-1 label">
 
-      <label id="example-radio-group-label" class="label">Choose a theme:</label>
+      <label id="example-radio-group-label" class="label">Choose a theme: &nbsp;&nbsp; </label>
       <mat-radio-group aria-label="Select an option">
 
         <mat-radio-button value="1">Neutral</mat-radio-button>
@@ -27,7 +27,7 @@
   </div>
 
   <div class="parent flex-card-height" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutGap="32px"   >
-    <mat-card fxFlex="50%"  fxLayoutGap="32px">
+    <mat-card fxFlex="50%" >
       <div class="mat-card-title heading"></div>
       <div class="left"
            *ngFor="let tile of tiles">
@@ -37,7 +37,7 @@
     </mat-card>
 
 
-    <mat-card fxFlex="50%" fxLayoutGap="32px" >
+    <mat-card fxFlex="50%">
       <div class="mat-card-title heading"></div>
       <div class="right"
            *ngFor="let tile of tiles">
@@ -49,7 +49,7 @@
 
 
   <div class="parent flex-card-height" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutGap="32px" >
-    <mat-card fxFlex="50%"  fxLayoutGap="32px">
+    <mat-card fxFlex="50%">
       <div class="mat-card-title heading"></div>
       <div class="left"
            *ngFor="let tile of tiles">
@@ -58,7 +58,7 @@
       </div>
     </mat-card>
 
-    <mat-card fxFlex="50%" fxLayoutGap="32px">
+    <mat-card fxFlex="50%">
       <div class="mat-card-title heading"></div>
       <div class="right"
            *ngFor="let tile of tiles">
@@ -69,8 +69,8 @@
   </div>
 
 
-  <div class="parent flex-card-height" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
-    <mat-card fxFlex="50%"  fxLayoutGap="32px">
+  <div class="parent flex-card-height" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutGap="32px">
+    <mat-card fxFlex="50%">
       <div class="mat-card-title heading"></div>
       <div class="left"
            *ngFor="let tile of tiles">
@@ -78,7 +78,7 @@
         <app-radiobutton *ngIf="tile.componentName === 'radiobutton'" class="spacing"></app-radiobutton>
       </div>
     </mat-card>
-    <mat-card fxFlex="50%" fxLayoutGap="32px">
+    <mat-card fxFlex="50%">
       <div class="mat-card-title heading"></div>
       <div class="right"
            *ngFor="let tile of tiles">
@@ -88,8 +88,8 @@
     </mat-card>
   </div>
 
-  <div class="parent flex-card-height" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
-    <mat-card fxFlex="50%" fxLayoutGap="32px" >
+  <div class="parent flex-card-height" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutGap="32px">
+    <mat-card fxFlex="50%"  >
       <div class="mat-card-title heading"></div>
       <div class="left"
            *ngFor="let tile of tiles">
@@ -97,7 +97,7 @@
         <app-slider *ngIf="tile.componentName === 'slider'" class="spacing"></app-slider>
       </div>
     </mat-card>
-    <mat-card fxFlex="50%" fxLayoutGap="32px" >
+    <mat-card fxFlex="50%">
       <div class="mat-card-title heading"></div>
       <div class="right"
            *ngFor="let tile of tiles">
