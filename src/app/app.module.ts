@@ -1,6 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-
+import {MatNativeDateModule} from '@angular/material/core';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
@@ -17,7 +17,7 @@ import {FormfieldComponent} from './forms/formfield/formfield.component';
 import {InputComponent} from './forms/input/input.component';
 import {RadiobuttonComponent} from './forms/radiobutton/radiobutton.component';
 import {SelectComponent} from './forms/select/select.component';
-import {SidetoggleComponent} from './forms/sidetoggle/sidetoggle.component';
+import {SlidetoggleComponent} from './forms/sidetoggle/slidetoggle.component';
 import {SliderComponent} from './forms/slider/slider.component';
 import {ButtonsInteractionsComponent} from './buttons-interactions/buttons-interactions.component';
 import {DatatablesComponent} from './datatables/datatables.component';
@@ -53,6 +53,13 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatSelectModule} from '@angular/material/select';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatSliderModule} from '@angular/material/slider';
+import {MatButtonModule} from '@angular/material/button';
+import {MatChipsModule} from '@angular/material/chips';
+import {MatProgressSpinner, MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 
 @NgModule({
@@ -66,7 +73,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     InputComponent,
     RadiobuttonComponent,
     SelectComponent,
-    SidetoggleComponent,
+    SlidetoggleComponent,
     SliderComponent,
     ButtonsInteractionsComponent,
     DatatablesComponent,
@@ -111,6 +118,14 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatAutocompleteModule,
     MatFormFieldModule,
     MatCheckboxModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatSelectModule,
+    MatSlideToggleModule,
+    MatSliderModule,
+    MatButtonModule,
+    MatChipsModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

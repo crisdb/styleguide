@@ -1,15 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+interface Food {
+  value: string;
+  viewValue: string;
+}
 
 @Component({
   selector: 'app-select',
   templateUrl: './select.component.html',
-  styleUrls: ['./select.component.css']
+  styleUrls: ['./select.component.scss']
 })
 export class SelectComponent implements OnInit {
-
-  constructor() { }
+  // @ts-ignore
+  parks: Park[] = [
+    {value: 'everglades-0', viewValue: 'Everglades'},
+    {value: 'tetons-1', viewValue: 'Grand Tetons'},
+    {value: 'yellowstone-2', viewValue: 'Yellowstone'}
+  ];
 
   ngOnInit(): void {
   }
-
 }
