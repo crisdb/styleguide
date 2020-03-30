@@ -1,30 +1,54 @@
-<h3>Basic Buttons</h3>
-<div class="example-button-row">
-  <button mat-button>Basic</button>
-  <button mat-button color="primary">Primary</button>
-  <button mat-button color="accent">Accent</button>
-  <button mat-button color="warn">Warn</button>
-  <button mat-button disabled>Disabled</button>
-  <a mat-button routerLink=".">Link</a>
+<div class="container">
+
+  <div class="titles">
+    <h1>Buttons</h1>
+    <h4>Using Angular Material to style Buttons
+    </h4>
+  </div>
+  <div class="flex-container" fxLayout="column">
+    <mat-card class="child-1 label">
+
+      <label id="example-radio-group-label" class="label">OPHIS Dark Theme</label>
+      <label for="darkTheme">Dark Theme</label>
+      <input id="darkTheme" type="checkbox" [formControl]="darkTheme">
+
+
+    </mat-card>
+  </div>
 </div>
 
-<h3>Raised Buttons</h3>
-<div class="example-button-row">
-  <button mat-raised-button>Basic</button>
-  <button mat-raised-button color="primary">Primary</button>
-  <button mat-raised-button color="accent">Accent</button>
-  <button mat-raised-button color="warn">Warn</button>
-  <button mat-raised-button disabled>Disabled</button>
-  <a mat-raised-button routerLink=".">Link</a>
+<div class="container">
+  <div class="parent flex-card-height" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutGap="32px" fxFill>
+    <mat-card fxFlex="50%" fxFill>
+      <div class="mat-card-title heading"></div>
+      <div class="left">
+        <app-buttonsies></app-buttonsies>
+      </div>
+    </mat-card>
+
+
+    <mat-card fxFlex="50%" fxFill>
+      <div class="mat-card-title heading"></div>
+      <div class="right">
+        <app-chips></app-chips>
+      </div>
+    </mat-card>
+  </div>
+
+
+  <div class="parent flex-card-height" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutGap="32px" fxFill>
+    <mat-card fxFlex="50%" fxFill>
+      <div class="mat-card-title heading"></div>
+      <div class="left">
+        <app-progress-spinner></app-progress-spinner>
+      </div>
+    </mat-card>
+
+    <div class="empty" fxFlex="50%" fxFill>
+      <div class="right">
+      </div>
+    </div>
+  </div>
 </div>
 
-<h3>Flat Buttons</h3>
-<div class="example-button-row">
-  <button mat-flat-button>Basic</button>
-  <button mat-flat-button color="primary">Primary</button>
-  <button mat-flat-button color="accent">Accent</button>
-  <button mat-flat-button color="warn">Warn</button>
-  <button mat-flat-button disabled>Disabled</button>
-  <a mat-flat-button routerLink=".">Link</a>
-</div>
 

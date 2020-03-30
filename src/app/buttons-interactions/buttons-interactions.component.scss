@@ -1,4 +1,11 @@
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
 
+mat-grid-tile {
+  border-radius: 4px !important;
+}
 .container{
   margin: 15px;
 }
@@ -31,12 +38,12 @@ mat-card {
   font-weight: normal;
 }
 .heading{
-height: 30px;
-background-color: #626f66;
-margin-top: -16px!important;
-margin-left: -17px;
-margin-right: -17px;
-border-radius: 3px;
+  height: 30px;
+  background-color: #626f66;
+  margin-top: -16px!important;
+  margin-left: -17px;
+  margin-right: -17px;
+  border-radius: 3px;
 }
 :host {
   display: block;
@@ -45,4 +52,7 @@ border-radius: 3px;
   padding-bottom:32px;
   background-color: var(--primary-color);
   color: var(--text-color);
+}
+.empty {
+  padding-left:90px;
 }

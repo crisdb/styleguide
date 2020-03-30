@@ -34,7 +34,16 @@ h4 {
 }
 
 :root {
-  --primary-color: red;
-  --background-color: #626f66;
-  --text-color: white
+  --primary-color: white;
+  --background-color: red;
+}
+.mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary,
+.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary{
+ background-color:#31ADE3
+}
+.mat-icon-button.mat-primary, .mat-stroked-button.mat-primary {
+  background-color:#31ADE3
+}
+.mat-progress-spinner circle {
+  stroke: #2CC934B3;
 }
