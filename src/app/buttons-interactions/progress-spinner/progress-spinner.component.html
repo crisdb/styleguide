@@ -1,13 +1,13 @@
 <div class="box-title">Progress Spinner</div>
 <br>
 
-<section class="example-section">
-  <label class="example-margin">Color:</label>
+<section class="label">
+  <label>Color:&nbsp;&nbsp;</label>
   <mat-radio-group [(ngModel)]="color">
-    <mat-radio-button class="example-margin" value="primary">
+    <mat-radio-button class="label" value="primary">
       Primary
     </mat-radio-button>
-    <mat-radio-button class="example-margin" value="accent">
+    <mat-radio-button class="label" value="accent">
       Accent
     </mat-radio-button>
     <mat-radio-button class="example-margin" value="warn">
@@ -15,9 +15,9 @@
     </mat-radio-button>
   </mat-radio-group>
 </section>
-
+<br>
 <section class="example-section">
-  <label class="example-margin">Mode:</label>
+  <label class="example-margin">Mode:&nbsp;&nbsp;</label>
   <mat-radio-group [(ngModel)]="mode">
     <mat-radio-button class="example-margin" value="determinate">
       Determinate
@@ -27,7 +27,7 @@
     </mat-radio-button>
   </mat-radio-group>
 </section>
-
+<br>
 <section class="example-section" *ngIf="mode === 'determinate'">
   <label class="example-margin">Progress:</label>
   <mat-slider class="example-margin" [(ngModel)]="value"></mat-slider>

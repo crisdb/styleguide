@@ -27,8 +27,11 @@ mat-card {
 }
 .mat-radio-button ~ .mat-radio-button {
   margin-left: 16px;
+  font-size: 15px;
 }
-
+.mat-radio-label{
+  font-size: 14px!important;
+}
 .titles {
   margin-left:20px;
 }
