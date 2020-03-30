@@ -1,48 +1,55 @@
 
-.container{
+:host {
+  display: block;
+  padding-right: 32px;
+  padding-top: 22px;
+  padding-bottom: 32px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.container {
   margin: 15px;
 }
+
 .spacing {
-  padding-top:50px;
+  padding-top: 50px;
 }
 
+// FlexGrid
+.parent {
+  height: 100px;
+}
 
-//FlexGrid
-  .parent {height: 100px;}
-
-
+// Material specific
 mat-card {
   margin: 20px;
-  width:auto;
+  width: auto;
 }
-.mat-card.mat-card{
-  width:auto;
+
+.mat-card.mat-card {
+  width: auto;
 }
+
 .mat-radio-button ~ .mat-radio-button {
   margin-left: 16px;
 }
 
 .titles {
-  margin-left:20px;
+  margin-left: 20px;
 }
+
 .label {
   color: black;
   font-size: 14px;
   font-weight: normal;
 }
-.heading{
-height: 30px;
-background-color: #626f66;
-margin-top: -16px!important;
-margin-left: -17px;
-margin-right: -17px;
-border-radius: 3px;
-}
-:host {
-  display: block;
-  padding-right: 32px;
-  padding-top:22px;
-  padding-bottom:32px;
-  background-color: var(--primary-color);
-  color: var(--text-color);
+
+.heading {
+  height: 30px;
+  background-color: #626f66;
+  margin-top: -16px !important;
+  margin-left: -17px;
+  margin-right: -17px;
+  border-radius: 3px;
 }
