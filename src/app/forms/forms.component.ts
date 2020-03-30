@@ -1,4 +1,8 @@
 import {Component, OnInit} from '@angular/core';
+import {ThemeService} from '../theme.service';
+import {FormControl} from '@angular/forms';
+
+
 const DIRECTIONS = ['row', 'row-reverse', 'column', 'column-reverse'];
 export interface ITile {
   color: string;
@@ -18,6 +22,16 @@ export interface ITile {
 export class FormsComponent implements OnInit {
   tiles: Array<ITile>;
   direction = 'row';
+  darkTheme =  new FormControl(false);
+  constructor(private themeService: ThemeService) {
+    this.darkTheme.valueChanges.subscribe(value => {
+      if (value) {
+        this.themeService.toggleDark();
+      } else {
+        this.themeService.toggleLight();
+      }
+    });
+  }
 
 // add the names to the array to loop through
   setComponents() {

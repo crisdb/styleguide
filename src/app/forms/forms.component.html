@@ -9,10 +9,8 @@
     <mat-card class="child-1 label">
 
       <label id="example-radio-group-label" class="label">Choose a theme: &nbsp;&nbsp; </label>
-      <mat-radio-group aria-label="Select an option">
-        <mat-radio-button value="1">Neutral</mat-radio-button>
-        <mat-radio-button value="2">todo</mat-radio-button>
-      </mat-radio-group>
+      <label for="darkTheme">Dark Theme</label>
+      <input id="darkTheme" type="checkbox" [formControl]="darkTheme">
     </mat-card>
   </div>
 </div>
