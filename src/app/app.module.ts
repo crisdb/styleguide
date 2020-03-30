@@ -10,6 +10,8 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import {FormsComponent} from './forms/forms.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
+
+import {ThemeService} from './theme.service';
 import {AutocompleteComponent} from './forms/autocomplete/autocomplete.component';
 import {CheckboxComponent} from './forms/checkbox/checkbox.component';
 import {DatepickerComponent} from './forms/datepicker/datepicker.component';
@@ -127,7 +129,7 @@ import {MatProgressSpinner, MatProgressSpinnerModule} from '@angular/material/pr
     MatChipsModule,
     MatProgressSpinnerModule
   ],
-  providers: [],
+  providers: [ThemeService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
