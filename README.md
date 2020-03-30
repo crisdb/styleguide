@@ -1,4 +1,4 @@
-# Untitled1
+#  Angular Material Component Guide NISC
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
 
@@ -29,6 +29,11 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
+Angular Flex Layout (Grid) API:
+https://github.com/angular/flex-layout/wiki/API-Documentation
 
-.
-"# styleguide" 
+"Angular Schematics" to generate Responsive Toolbar and basic responsive navigation
+https://material.angular.io/guide/schematics
+
+ng generate @angular/material:navigation <component-name>
+
