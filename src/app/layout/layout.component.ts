@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl} from '@angular/forms';
+import {ThemeService} from '../theme.service';
 
 @Component({
   selector: 'app-layout',
@@ -7,7 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
 
-  constructor() { }
+  darkTheme =  new FormControl(false);
+  constructor(private themeService: ThemeService) {
+    this.darkTheme.valueChanges.subscribe(value => {
+      if (value) {
+        this.themeService.toggleDark();
+      } else {
+        this.themeService.toggleLight();
+      }
+    });
+  }
 
   ngOnInit(): void {
   }

@@ -1,1 +1,28 @@
-<p>expansion-panel works!</p>
+<div class="box-title">Expansion Panel</div>
+<br>
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Personal data
+      </mat-panel-title>
+      <mat-panel-description>
+        Type your name and age
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-form-field>
+      <mat-label>First name</mat-label>
+      <label>
+        <input matInput>
+      </label>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Age</mat-label>
+      <label>
+        <input matInput type="number" min="1">
+      </label>
+    </mat-form-field>
+  </mat-expansion-panel>
+</mat-accordion>

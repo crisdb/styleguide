@@ -9,7 +9,7 @@
     <mat-card class="child-1 label">
 
       <label id="example-radio-group-label" class="label">OPHIS Dark Theme</label>
-      <input id="darkTheme" type="checkbox" [formControl]="darkTheme">
+      <label for="darkTheme"></label><input id="darkTheme" type="checkbox" [formControl]="darkTheme">
 
 
     </mat-card>
@@ -25,14 +25,31 @@
       </div>
     </mat-card>
 
+    <mat-card fxFlex="50%" fxFill>
+      <div class="mat-card-title heading"></div>
+      <div class="right">
+        <app-icon></app-icon>
+      </div>
+    </mat-card>
+  </div>
+
+  <div class="parent flex-card-height" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutGap="32px" fxFill>
+    <mat-card fxFlex="50%" fxFill>
+      <div class="mat-card-title heading"></div>
+      <div class="left">
+        <app-chips></app-chips>
+      </div>
+    </mat-card>
 
     <mat-card fxFlex="50%" fxFill>
       <div class="mat-card-title heading"></div>
       <div class="right">
-        <app-chips></app-chips>
+        <app-progressbar></app-progressbar>
       </div>
     </mat-card>
   </div>
+
+
 
 
   <div class="parent flex-card-height" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutGap="32px" fxFill>

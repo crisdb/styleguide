@@ -1,1 +1,68 @@
-<p>layout works!</p>
+<div class="container">
+
+  <div class="titles">
+    <h1>Layout</h1>
+    <h4>Using Angular Material to build Layout elements
+    </h4>
+  </div>
+  <div class="flex-container" fxLayout="column">
+    <mat-card class="child-1 label">
+
+      <label id="example-radio-group-label" class="label">OPHIS Dark Theme</label>
+      <label for="darkTheme"></label><input id="darkTheme" type="checkbox" [formControl]="darkTheme">
+
+    </mat-card>
+  </div>
+</div>
+
+<div class="container">
+  <div class="parent flex-card-height" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutGap="32px" fxFill>
+    <mat-card fxFlex="50%" fxFill>
+      <div class="mat-card-title heading"></div>
+      <div class="left">
+        <app-card></app-card>
+      </div>
+    </mat-card>
+    <mat-card fxFlex="50%" fxFill>
+      <div class="mat-card-title heading"></div>
+      <div class="right">
+        <app-divider></app-divider>
+      </div>
+    </mat-card>
+  </div>
+
+</div>
+
+  <div class="container">
+    <div class="parent flex-card-height" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutGap="32px" fxFill>
+      <mat-card fxFlex="50%" fxFill>
+        <div class="mat-card-title heading"></div>
+        <div class="left">
+          <app-expansion-panel></app-expansion-panel>
+        </div>
+      </mat-card>
+      <mat-card fxFlex="50%" fxFill>
+        <div class="mat-card-title heading"></div>
+        <div class="right">
+          <app-grid></app-grid>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+
+    <div class="container">
+      <div class="parent flex-card-height" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutGap="32px" fxFill>
+        <mat-card fxFlex="50%" fxFill>
+          <div class="mat-card-title heading"></div>
+          <div class="left">
+            <app-stepper></app-stepper>
+          </div>
+        </mat-card>
+        <mat-card fxFlex="50%" fxFill>
+          <div class="mat-card-title heading"></div>
+          <div class="right">
+            <app-tabs></app-tabs>
+          </div>
+        </mat-card>
+      </div>
+    </div>

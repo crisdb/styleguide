@@ -6,7 +6,18 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-
+:host {
+  display: block;
+  padding-right: 32px;
+  padding-top:22px;
+  padding-bottom:32px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+:root {
+  --primary-color: white;
+  --background-color: white;
+}
 
 h1 {
   font-size: 24px;
@@ -24,6 +35,10 @@ h4 {
   margin-top: -30px;
 }
 
+.container{
+  margin: 15px;
+}
+
 .heading{
   height: 30px;
   background-color: #626f66;
@@ -33,10 +48,23 @@ h4 {
   border-radius: 3px;
 }
 
-:root {
-  --primary-color: white;
-  --background-color: white;
+.empty {
+  padding-left:90px;
 }
+
+.label {
+  color: black;
+  font-size: 14px;
+  font-weight: normal;
+}
+.spacing {
+  padding-top:50px;
+}
+.titles {
+  margin-left:20px;
+}
+
+//Material
 .mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary,
 .mat-chip.mat-standard-chip.mat-chip-selected.mat-primary{
  background-color:#31ADE3
@@ -47,3 +75,24 @@ h4 {
 .mat-progress-spinner circle {
   stroke: #2CC934B3;
 }
+mat-grid-tile {
+  border-radius: 4px !important;
+}
+mat-card {
+  margin: 20px;
+  width:auto;
+}
+.mat-card.mat-card{
+  width:auto;
+}
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+  font-size: 15px;
+}
+.mat-radio-label {
+  font-size: 14px !important;
+}
+
+//FlexGrid
+.parent {height: 100px;}
+

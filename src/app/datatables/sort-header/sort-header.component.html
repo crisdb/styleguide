@@ -1,1 +1,19 @@
-<p>sort-header works!</p>
+<div class="box-title">Sort Header</div>
+<br>
+<table matSort (matSortChange)="sortData($event)">
+  <tr>
+    <th mat-sort-header="name">Park Name</th>
+    <th mat-sort-header="calories">Visitors</th>
+    <th mat-sort-header="fat">Moose</th>
+    <th mat-sort-header="carbs">Waterfalls</th>
+    <th mat-sort-header="protein">Geysers</th>
+  </tr>
+
+  <tr *ngFor="let dessert of sortedData">
+    <td>{{dessert.name}}</td>
+    <td>{{dessert.calories}}</td>
+    <td>{{dessert.fat}}</td>
+    <td>{{dessert.carbs}}</td>
+    <td>{{dessert.protein}}</td>
+  </tr>
+</table>

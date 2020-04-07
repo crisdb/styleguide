@@ -27,7 +27,7 @@ import {LayoutComponent} from './layout/layout.component';
 import {NavigationComponent} from './navigation/navigation.component';
 import {PopupsComponent} from './popups/popups.component';
 import {SchematicNavComponent} from './schematic-nav/schematic-nav.component';
-import { FormsModule} from '@angular/forms';
+import {FormsModule} from '@angular/forms';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatExpansionModule} from '@angular/material/expansion';
@@ -49,7 +49,6 @@ import {MenuComponent} from './navigation/menu/menu.component';
 import {SidenavComponent} from './navigation/sidenav/sidenav.component';
 import {ToolbarComponent} from './navigation/toolbar/toolbar.component';
 import {DialogComponent} from './popups/dialog/dialog.component';
-import {SnackbarComponent} from './popups/snackbar/snackbar.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -61,7 +60,17 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatButtonModule} from '@angular/material/button';
 import {MatChipsModule} from '@angular/material/chips';
-import {MatProgressSpinner, MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { GridComponent } from './layout/grid/grid.component';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatTabsModule} from '@angular/material/tabs';
+import {IconComponent } from './buttons-interactions/buttons/icon/icon.component';
+import {ProgressbarComponent } from './buttons-interactions/buttons/progressbar/progressbar.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
+import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -98,7 +107,9 @@ import {MatProgressSpinner, MatProgressSpinnerModule} from '@angular/material/pr
     SidenavComponent,
     ToolbarComponent,
     DialogComponent,
-    SnackbarComponent
+    GridComponent,
+    IconComponent,
+    ProgressbarComponent
   ],
   imports: [
     BrowserModule,
@@ -127,7 +138,15 @@ import {MatProgressSpinner, MatProgressSpinnerModule} from '@angular/material/pr
     MatSliderModule,
     MatButtonModule,
     MatChipsModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatProgressBarModule,
+    MatInputModule,
+    MatMenuModule,
+    MatStepperModule,
+    MatTabsModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatTableModule
   ],
   providers: [ThemeService],
   bootstrap: [AppComponent]
